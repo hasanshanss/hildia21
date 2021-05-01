@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hildia21", "Hildia21\Hildia21.csproj", "{A9F80C48-F599-467B-8DA7-1FC390014F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hildia21.Services", "Hildia21.Services\Hildia21.Services.csproj", "{9DB022AC-DB57-4C10-BE59-C10D7FF5FD19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hildia21.DAL", "Hildia21.DAL\Hildia21.DAL.csproj", "{D9D1F161-2E80-41AB-A906-7E8F241A5459}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hildia21.API", "Hildia21.API\Hildia21.API.csproj", "{85ACF483-CAFA-4703-A27A-D02D293EF229}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A9F80C48-F599-467B-8DA7-1FC390014F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9F80C48-F599-467B-8DA7-1FC390014F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9F80C48-F599-467B-8DA7-1FC390014F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9F80C48-F599-467B-8DA7-1FC390014F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB022AC-DB57-4C10-BE59-C10D7FF5FD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB022AC-DB57-4C10-BE59-C10D7FF5FD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB022AC-DB57-4C10-BE59-C10D7FF5FD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB022AC-DB57-4C10-BE59-C10D7FF5FD19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D1F161-2E80-41AB-A906-7E8F241A5459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D1F161-2E80-41AB-A906-7E8F241A5459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D1F161-2E80-41AB-A906-7E8F241A5459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D1F161-2E80-41AB-A906-7E8F241A5459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85ACF483-CAFA-4703-A27A-D02D293EF229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85ACF483-CAFA-4703-A27A-D02D293EF229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85ACF483-CAFA-4703-A27A-D02D293EF229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85ACF483-CAFA-4703-A27A-D02D293EF229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
