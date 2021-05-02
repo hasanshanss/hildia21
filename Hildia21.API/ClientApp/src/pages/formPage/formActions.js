@@ -1,13 +1,11 @@
-
 import {
-    PEOPLE_FETCH_ALL,
+    UPDATE_PERSON_PROPERTIES,
     ERROR
-} from './peopleConstants'
+} from './formConstants'
 
-
-export function peopleFetchAll(data) {
+export function updatePersonProperties(data) {
     return {
-        type: PEOPLE_FETCH_ALL,
+        type: UPDATE_PERSON_PROPERTIES,
         payload: data
     };
 }

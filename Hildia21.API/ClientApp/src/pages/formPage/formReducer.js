@@ -1,21 +1,19 @@
 import {
-    PEOPLE_FETCH_ALL,
+    UPDATE_PERSON_PROPERTIES,
     ERROR
-} from './peopleConstants'
+} from './formConstants'
 
 const initialState = {
-    loading: true,
     person: {}
 }
 
-export const peopleReducer = (state = initialState, { type, payload }) => {
+export const formReducer = (state = initialState, { type, payload }) => {
 
     switch (type) {
-        case PEOPLE_FETCH_ALL:
+        case UPDATE_PERSON_PROPERTIES:
             return {
                 ...state,
-                loading: false,
-                people: payload
+                person: {...person}
             }
         case ERROR:
             return {
