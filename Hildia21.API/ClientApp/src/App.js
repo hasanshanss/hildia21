@@ -14,8 +14,7 @@ import React, { Component } from 'react';
 //   NavLink
 // } from "react-router-dom";
 import Table from "./components/table/Table";
-import RegionToggler from './components/form/RegionToggler';
-import SearchBox from './components/form/SerachBox';
+import {Form} from './components/form/Form';
 
 export const App = () => {
   return (
@@ -29,22 +28,9 @@ export const App = () => {
           </Col>
         </Row>
 
-      {/* FORM */}
         <div className="wrap-contact2">
-          <form className="contact2-form">
-            <Row>
-              <Col md="4">
-                <SearchBox/>
-              </Col>
-              <Col md="8">
-                <RegionToggler />
-                <Table />
-              </Col>
-            </Row>
-          </form>
+          <Form />
         </div>
-
-
 
       </Container>
 
