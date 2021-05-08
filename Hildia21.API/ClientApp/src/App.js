@@ -14,9 +14,12 @@ import React, { Component } from 'react';
 //   NavLink
 // } from "react-router-dom";
 import Table from "./components/table/Table";
-import {Form} from './components/form/Form';
+import {MyForm} from './components/form/MyForm';
+import { Provider } from 'react-redux';
 
 export const App = () => {
+
+
   return (
     <React.Fragment>
 
@@ -29,7 +32,7 @@ export const App = () => {
         </Row>
 
         <div className="wrap-contact2">
-          <Form />
+          <MyForm />
         </div>
 
       </Container>

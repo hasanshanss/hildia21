@@ -1,27 +1,22 @@
-import React, {useEffect } from 'react';
+import React, { useEffect } from 'react';
 import TableRow from './TableRow';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 
 
 const Table = () => {
 
-  const dispatch = useDispatch();
-  const { people, error, loading } = useSelector(({peopleReducer}) => peopleReducer)
-  
-  
-  useEffect(() => {
-    // dispatch(fetchPeopleOne(1));
-  }, [])
+  const { people, error, loading } = useSelector(({ peopleReducer }) => peopleReducer)
 
   const isData = () => {
-
+    
+    console.error(error)
     if (loading) {
       return <td>Loading...</td>
     } else {
 
-      if(Array.isArray(people))
+      if (Array.isArray(people))
         return people.map((value, i) => <TableRow key={i} person={value} />)
       else
         return <TableRow key={1} person={people} />;
@@ -44,12 +39,8 @@ const Table = () => {
       <div className="tbl-content tbl-main">
         <table cellPadding="0" cellSpacing="0" border="0">
           <tbody>
-            {
-              error
-                ? console.error(error)
-                : isData()
-              }
-            </tbody>
+            {isData()}
+          </tbody>
         </table>
       </div>
     </section>

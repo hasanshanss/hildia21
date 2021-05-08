@@ -19,7 +19,7 @@ export const peopleReducer = (state = initialState, { type, payload }) => {
         case ERROR:
             return {
                 ...state,
-                loading: false,
+                loading: true,
                 error: payload
             }
 

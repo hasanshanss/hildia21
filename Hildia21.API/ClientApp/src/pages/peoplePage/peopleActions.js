@@ -9,7 +9,7 @@ import axios from 'axios'
 export const peopleFetchAll = (person) => 
 
 async (dispatch, getState) => {
-    
+    console.log(person)    
     try {
         const params =  {...person }
         const response = await axios.get("", {params});

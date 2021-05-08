@@ -1,13 +1,14 @@
 import React from 'react'
+import {Field} from 'formik'
 
 
-const SearchInput = ({name, placeholder, onInputChangeHandler}) => {
+const SearchInput = (props) => {
     
-
+    console.log(props)
     return (
         <div className="wrap-input2">
-            <input className="input2" type="text" name={name} placeholder={placeholder} onChange={(e) => onInputChangeHandler(e)} />
-            {/* <span className={`focus-input2 ${ person[name] ? "w-value" : ""}`} data-placeholder={name.toUpperCase()}></span> */}
+            <Field className="input2" type="text"  {...props} placeholder="" />
+            <span className={`focus-input2 ${ props.valueExists ? "w-value" : ""}`} data-placeholder={props.placeholder.toUpperCase()}></span>
         </div>
     );
 }
