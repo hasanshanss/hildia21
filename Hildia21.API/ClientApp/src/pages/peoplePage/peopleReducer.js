@@ -5,7 +5,6 @@ import {
 
 const initialState = {
     loading: true,
-    person: {}
 }
 
 export const peopleReducer = (state = initialState, { type, payload }) => {

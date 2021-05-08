@@ -1,15 +1,14 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import TableRow from './TableRow';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPeople} from "../../pages/peoplePage/peopleActions"
-import { peopleReducer } from '../../pages/peoplePage/peopleReducer';
+
 
 
 
 const Table = () => {
 
   const dispatch = useDispatch();
-  const { people, error, loading } = useSelector(state => state)
+  const { people, error, loading } = useSelector(({peopleReducer}) => peopleReducer)
   
   
   useEffect(() => {

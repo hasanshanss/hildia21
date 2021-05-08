@@ -13,7 +13,7 @@ export const formReducer = (state = initialState, { type, payload }) => {
         case UPDATE_PERSON_PROPERTIES:
             return {
                 ...state,
-                person: {...person}
+                person: {...payload}
             }
         case ERROR:
             return {

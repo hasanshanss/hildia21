@@ -13,9 +13,8 @@ import React, { Component } from 'react';
 //   Link,
 //   NavLink
 // } from "react-router-dom";
-import Form from "./components/Form";
 import Table from "./components/table/Table";
-import RegionToggler from './components/RegionToggler';
+import RegionToggler from './components/form/RegionToggler';
 import SearchBox from './components/form/SerachBox';
 
 export const App = () => {

@@ -1,6 +1,6 @@
 
 import React, { Component, useState, useEffect } from 'react'
-import SearchInput from '../SearchInput'
+import SearchInput from '../form/SearchInput'
 import { useDispatch } from 'react-redux'
 import { getPeople } from "../../pages/peoplePage/peopleActions"
 

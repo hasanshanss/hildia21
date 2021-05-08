@@ -23,22 +23,22 @@ namespace Hildia21.Services.PeopleServices
 
             if (!String.IsNullOrEmpty(person.Lastname))
             {
-                query = query.Where(p => p.Lastname.Equals(person.Lastname));
+                query = query.Where(p => p.Lastname.StartsWith(person.Lastname));
             }
 
             if (!String.IsNullOrEmpty(person.Name))
             {
-                query = query.Where(p => p.Name.Equals(person.Name));
+                query = query.Where(p => p.Name.StartsWith(person.Name));
             }
 
             if (!String.IsNullOrEmpty(person.Father))
             {
-                query = query.Where(p => p.Father.Equals(person.Father));
+                query = query.Where(p => p.Father.StartsWith(person.Father));
             }
 
             if (!String.IsNullOrEmpty(person.Address))
             {
-                query = query.Where(p => p.Address.Equals(person.Address));
+                query = query.Where(p => p.Address.Contains(person.Address));
             }
 
             if (!String.IsNullOrEmpty(person.Dob))
@@ -46,10 +46,10 @@ namespace Hildia21.Services.PeopleServices
                 query = query.Where(p => p.Dob.Equals(person.Dob));
             }
 
-            string a = query.ToQueryString();
 
-
-            return query.Take(1000).AsEnumerable();
+            return query.OrderBy(m=>m.Name)
+                        .Take(1000)
+                        .AsEnumerable();
         }
 
         //private void AddFilter(ref IQueryable query, string data)
